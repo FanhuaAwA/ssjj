@@ -1,0 +1,26 @@
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.mdb
+
+# IDE/user files
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+
+# Runtime/game managed dependencies
+lib/
+managed/
+GameHelper.dll
+Injector.exe
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.zip
