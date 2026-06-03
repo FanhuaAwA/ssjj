@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>Bhop02Executor</AssemblyName>
+    <RootNamespace>Bhop02Executor</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="EmbeddedMonoInjector\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bhop02.AirStrafe\Bhop02.AirStrafe.csproj" ReferenceOutputAssembly="false" Private="false" />
+  </ItemGroup>
+
+  <Target Name="CopyPayloadToOutput" AfterTargets="Build">
+    <PropertyGroup>
+      <PayloadOutput>..\Bhop02.AirStrafe\bin\$(Configuration)\net48\Bhop02.AirStrafe.dll</PayloadOutput>
+      <PayloadPdb>..\Bhop02.AirStrafe\bin\$(Configuration)\net48\Bhop02.AirStrafe.pdb</PayloadPdb>
+    </PropertyGroup>
+    <Copy SourceFiles="$(PayloadOutput)" DestinationFolder="$(OutputPath)" Condition="Exists('$(PayloadOutput)')" />
+    <Copy SourceFiles="$(PayloadPdb)" DestinationFolder="$(OutputPath)" Condition="Exists('$(PayloadPdb)')" />
+  </Target>
+</Project>

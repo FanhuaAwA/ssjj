@@ -1,0 +1,10 @@
+bin/
+obj/
+*.user
+*.suo
+*.pdb
+*.cache
+.vs/
+Desktop/
+.idea/
+*.zip

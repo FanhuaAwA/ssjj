@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Bhop02.AirStrafe</AssemblyName>
+    <RootNamespace>Bhop02</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(AnalysisAssemblyDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="configNet">
+      <HintPath>$(GameManagedDir)\configNet.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="base.net">
+      <HintPath>$(GameManagedDir)\base.net.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Entitas">
+      <HintPath>$(GameManagedDir)\Entitas.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="physics.net">
+      <HintPath>$(GameManagedDir)\physics.net.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SSJJ.Contract">
+      <HintPath>$(GameManagedDir)\SSJJ.Contract.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SSJJBase_Library">
+      <HintPath>$(GameManagedDir)\SSJJBase_Library.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SSJJEntitas_Library">
+      <HintPath>$(GameManagedDir)\SSJJEntitas_Library.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SSJJNetworking_Library">
+      <HintPath>$(GameManagedDir)\SSJJNetworking_Library.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SSJJUserCmd_Library">
+      <HintPath>$(GameManagedDir)\SSJJUserCmd_Library.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SSJJPhysics_Library">
+      <HintPath>$(GameManagedDir)\SSJJPhysics_Library.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameManagedDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(GameManagedDir)\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

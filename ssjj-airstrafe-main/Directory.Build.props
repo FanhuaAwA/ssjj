@@ -1,0 +1,6 @@
+﻿<Project>
+  <PropertyGroup>
+    <GameManagedDir Condition="'$(GameManagedDir)'==''">$(MSBuildThisFileDirectory)..\..\..\..\battle\13_64\SSJJ_BattleClient_Unity_Data\Managed</GameManagedDir>
+    <AnalysisAssemblyDir Condition="'$(AnalysisAssemblyDir)'==''">$(MSBuildThisFileDirectory)..\..\..\..\.analysis\decrypted\battle_13_64</AnalysisAssemblyDir>
+  </PropertyGroup>
+</Project>
