@@ -8,16 +8,16 @@ SSJJ GameHelper 是一个基于 Unity/Mono 的 C# 插件与注入器示例项目
 
 ```text
 .
-├── SSJJPlugin/        # GameHelper 插件源码
-│   ├── Main.cs        # 入口：SSJJPlugin.Loader.Load()
-│   ├── PluginController.cs
-│   ├── Systems/       # ESP、Aim、菜单、按键、调试模块
-│   └── Utils/         # 反射与绘制工具
-└── SSJJ-Injector/     # Mono 注入器源码和启动脚本
-    ├── Program.cs
-    ├── Injector.csproj
-    ├── inject.cmd
-    └── inject.bat
+|-- SSJJPlugin/        # GameHelper 插件源码
+|   |-- Main.cs        # 入口：SSJJPlugin.Loader.Load()
+|   |-- PluginController.cs
+|   |-- Systems/       # ESP、Aim、菜单、按键、调试模块
+|   `-- Utils/         # 反射与绘制工具
+`-- SSJJ-Injector/     # Mono 注入器源码和启动脚本
+    |-- Program.cs
+    |-- Injector.csproj
+    |-- inject.cmd
+    `-- inject.bat
 ```
 
 ## 使用介绍
